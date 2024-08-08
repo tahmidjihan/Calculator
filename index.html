@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #212121;
+        color: #bbb;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        background: #ffffff2a;
+        padding: 20px;
+        width: 350px;
+      }
+      .btn {
+        background: #ffffff3f;
+        height: 70px;
+        width: 70px;
+        font-size: 120%;
+        font-weight: 700;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 5px;
+        cursor: pointer;
+      }
+      .c {
+        background: #b66100;
+      }
+      .enter {
+        background: #b68c00;
+        border-radius: 50px;
+        width: 150px;
+      }
+      .methods .btn {
+        background-color: #ffffffad;
+      }
+      #inputField {
+        width: 310px;
+        height: 100px;
+        margin-bottom: 20px;
+        background: #212121;
+        border: none;
+        border-bottom: 4px solid #ffffffad;
+        border-radius: 5px;
+        color: #bbb;
+        font-size: 200%;
+      }
+      #inputField:focus {
+        outline: none;
+        background: #212121;
+      }
+      #inputField::placeholder {
+        padding: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="input-field">
+          <input
+            type="text"
+            id="inputField"
+            placeholder="Your Calculation"
+            autofocus />
+        </div>
+        <div class="btn-row methods">
+          <button class="btn method">/</button>
+          <button class="btn method">*</button>
+          <button class="btn method">-</button>
+          <button class="btn method">+</button>
+        </div>
+        <div class="btn-row">
+          <button class="btn num">1</button>
+          <button class="btn num">2</button>
+          <button class="btn num">3</button>
+          <button class="btn num">4</button>
+        </div>
+        <div class="btn-row">
+          <button class="btn num">5</button>
+          <button class="btn num">6</button>
+          <button class="btn num">7</button>
+          <button class="btn num">8</button>
+        </div>
+        <div class="btn-row">
+          <button class="btn num">9</button>
+          <button class="btn num">0</button>
+          <button class="btn num">00</button>
+          <button class="btn num">.</button>
+        </div>
+        <div class="btn-row">
+          <button class="btn c" id="clearAll">CE</button>
+          <button class="btn c" id="clearPast">C</button>
+          <button class="btn enter" type="submit">=</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
